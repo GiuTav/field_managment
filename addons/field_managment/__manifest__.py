@@ -1,0 +1,22 @@
+{
+    "name": "Field Management",
+    "summary": "Manage agricultural fields, crop cycles, field logs and traceability.",
+    "version": "19.0.1.0.0",
+    "category": "Agriculture",
+    "author": "Dinamiche Aziendali",
+    "website": "https://www.dinamicheaziendali.it",
+    "license": "LGPL-3",
+    "depends": ["base", "mail", "product", "stock"],
+    "data": [
+        "security/ir.model.access.csv",
+        "data/field_management_sequence.xml",
+        "views/field_management_menus.xml",
+        "views/farm_field_views.xml",
+        "views/crop_cycle_views.xml",
+        "views/field_log_views.xml",
+        "views/harvest_lot_views.xml",
+        "views/processing_lot_views.xml",
+    ],
+    "application": True,
+    "installable": True,
+}

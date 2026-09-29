@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="seq_farm_field_log" model="ir.sequence">
+        <field name="name">Field Log</field>
+        <field name="code">farm.field.log</field>
+        <field name="prefix">LOG/%(year)s/</field>
+        <field name="padding">5</field>
+    </record>
+    <record id="seq_farm_harvest_lot" model="ir.sequence">
+        <field name="name">Harvest Lot</field>
+        <field name="code">farm.harvest.lot</field>
+        <field name="prefix">HAR/%(year)s/</field>
+        <field name="padding">5</field>
+    </record>
+    <record id="seq_farm_processing_lot" model="ir.sequence">
+        <field name="name">Processing Lot</field>
+        <field name="code">farm.processing.lot</field>
+        <field name="prefix">PRD/%(year)s/</field>
+        <field name="padding">5</field>
+    </record>
+</odoo>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_farm_crop_cycle_list" model="ir.ui.view">
+        <field name="name">farm.crop.cycle.list</field>
+        <field name="model">farm.crop.cycle</field>
+        <field name="arch" type="xml">
+            <list decoration-success="state == 'done'" decoration-info="state in ('active', 'harvesting')">
+                <field name="name"/>
+                <field name="field_id"/>
+                <field name="product_id"/>
+                <field name="state"/>
+                <field name="date_start"/>
+                <field name="expected_harvest_date"/>
+                <field name="target_qty_kg"/>
+                <field name="harvested_qty_kg"/>
+                <field name="yield_kg_ha"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_farm_crop_cycle_form" model="ir.ui.view">
+        <field name="name">farm.crop.cycle.form</field>
+        <field name="model">farm.crop.cycle</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_start" type="object" string="Start" invisible="state != 'planned'"/>
+                    <button name="action_harvesting" type="object" string="Start Harvest" invisible="state not in ('planned', 'active')"/>
+                    <button name="action_done" type="object" string="Done" invisible="state == 'done'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="planned,active,harvesting,done"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="field_id"/>
+                            <field name="product_id"/>
+                            <field name="variety"/>
+                        </group>
+                        <group>
+                            <field name="date_start"/>
+                            <field name="expected_harvest_date"/>
+                            <field name="date_end"/>
+                            <field name="target_qty_kg"/>
+                            <field name="harvested_qty_kg"/>
+                            <field name="yield_kg_ha"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Field Log">
+                            <field name="log_ids">
+                                <list editable="bottom">
+                                    <field name="date"/>
+                                    <field name="activity_type"/>
+                                    <field name="operator_id"/>
+                                    <field name="product_id"/>
+                                    <field name="quantity"/>
+                                    <field name="withholding_days"/>
+                                    <field name="state"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Harvest Lots">
+                            <field name="harvest_lot_ids">
+                                <list>
+                                    <field name="date"/>
+                                    <field name="name"/>
+                                    <field name="quantity_kg"/>
+                                    <field name="quality_grade"/>
+                                    <field name="destination"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Agronomic Notes">
+                            <field name="agronomic_note"/>
+                            <field name="sustainability_note"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+</odoo>

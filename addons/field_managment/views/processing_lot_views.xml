@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_farm_processing_lot_list" model="ir.ui.view">
+        <field name="name">farm.processing.lot.list</field>
+        <field name="model">farm.processing.lot</field>
+        <field name="arch" type="xml">
+            <list decoration-success="state == 'done'">
+                <field name="date"/>
+                <field name="name"/>
+                <field name="product_id"/>
+                <field name="input_qty_kg"/>
+                <field name="output_qty"/>
+                <field name="output_uom"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_farm_processing_lot_form" model="ir.ui.view">
+        <field name="name">farm.processing.lot.form</field>
+        <field name="model">farm.processing.lot</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_processing" type="object" string="Start Processing" invisible="state != 'draft'"/>
+                    <button name="action_done" type="object" string="Done" invisible="state == 'done'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,processing,done"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="date"/>
+                            <field name="product_id"/>
+                        </group>
+                        <group>
+                            <field name="input_qty_kg"/>
+                            <field name="output_qty"/>
+                            <field name="output_uom"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Source Harvest Lots">
+                            <field name="harvest_lot_ids"/>
+                        </page>
+                        <page string="Traceability Story">
+                            <field name="consumer_story"/>
+                            <field name="batch_note"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+</odoo>

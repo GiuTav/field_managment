@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_farm_field" model="ir.actions.act_window">
+        <field name="name">Fields</field>
+        <field name="res_model">farm.field</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_farm_crop_cycle" model="ir.actions.act_window">
+        <field name="name">Crop Cycles</field>
+        <field name="res_model">farm.crop.cycle</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_farm_field_log" model="ir.actions.act_window">
+        <field name="name">Field Log</field>
+        <field name="res_model">farm.field.log</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_farm_harvest_lot" model="ir.actions.act_window">
+        <field name="name">Harvest Lots</field>
+        <field name="res_model">farm.harvest.lot</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_farm_processing_lot" model="ir.actions.act_window">
+        <field name="name">Processing Lots</field>
+        <field name="res_model">farm.processing.lot</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_field_management_root" name="Field Management" sequence="35"/>
+    <menuitem id="menu_field_management_operations" name="Operations" parent="menu_field_management_root" sequence="10"/>
+    <menuitem id="menu_field_management_traceability" name="Traceability" parent="menu_field_management_root" sequence="20"/>
+
+    <menuitem id="menu_farm_field" name="Fields" parent="menu_field_management_operations" action="action_farm_field" sequence="10"/>
+    <menuitem id="menu_farm_crop_cycle" name="Crop Cycles" parent="menu_field_management_operations" action="action_farm_crop_cycle" sequence="20"/>
+    <menuitem id="menu_farm_field_log" name="Field Log" parent="menu_field_management_operations" action="action_farm_field_log" sequence="30"/>
+    <menuitem id="menu_farm_harvest_lot" name="Harvest Lots" parent="menu_field_management_traceability" action="action_farm_harvest_lot" sequence="10"/>
+    <menuitem id="menu_farm_processing_lot" name="Processing Lots" parent="menu_field_management_traceability" action="action_farm_processing_lot" sequence="20"/>
+</odoo>

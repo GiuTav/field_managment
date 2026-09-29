@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_farm_field_log_list" model="ir.ui.view">
+        <field name="name">farm.field.log.list</field>
+        <field name="model">farm.field.log</field>
+        <field name="arch" type="xml">
+            <list decoration-warning="activity_type == 'treatment'" decoration-muted="state == 'draft'">
+                <field name="date"/>
+                <field name="name"/>
+                <field name="field_id"/>
+                <field name="crop_cycle_id"/>
+                <field name="activity_type"/>
+                <field name="operator_id"/>
+                <field name="product_id"/>
+                <field name="quantity"/>
+                <field name="withholding_days"/>
+                <field name="allowed_harvest_date"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_farm_field_log_form" model="ir.ui.view">
+        <field name="name">farm.field.log.form</field>
+        <field name="model">farm.field.log</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_confirm" type="object" string="Confirm" invisible="state == 'confirmed'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirmed"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="date"/>
+                            <field name="field_id"/>
+                            <field name="crop_cycle_id"/>
+                            <field name="activity_type"/>
+                            <field name="operator_id"/>
+                        </group>
+                        <group>
+                            <field name="product_id"/>
+                            <field name="quantity"/>
+                            <field name="uom_name"/>
+                            <field name="is_natural_input"/>
+                            <field name="withholding_days"/>
+                            <field name="allowed_harvest_date"/>
+                            <field name="cost_estimate"/>
+                        </group>
+                    </group>
+                    <group string="Context">
+                        <field name="weather"/>
+                        <field name="temperature"/>
+                        <field name="reason"/>
+                    </group>
+                    <field name="notes"/>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+</odoo>
