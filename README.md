@@ -26,6 +26,6 @@ For Diana 2.0 or similar customers, the demo should tell the story of a controll
 ## Technical Notes
 
 - Target Odoo version: 19.0.
-- Addon path: `addons/field_managment`.
+- Addon path: `field_managment`.
 - Core dependencies: `base`, `mail`, `product`, `stock`.
 - Demo-specific customer data should stay outside the addon, in scripts or demo fixtures.
