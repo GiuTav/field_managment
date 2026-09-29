@@ -1,0 +1,966 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* field_managment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-29 16:24+0000\n"
+"PO-Revision-Date: 2026-09-29 16:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: it\n"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_harvest_lot__quality_grade__a
+msgid "A"
+msgstr "A"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__message_needaction
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__message_needaction
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__message_needaction
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__message_needaction
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__message_needaction
+msgid "Action Needed"
+msgstr "Azione richiesta"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__active
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_crop_cycle__state__active
+msgid "Active"
+msgstr "Attivo"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__activity_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__activity_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__activity_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__activity_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__activity_ids
+msgid "Activities"
+msgstr "Attivita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__activity_exception_decoration
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__activity_exception_decoration
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__activity_exception_decoration
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__activity_exception_decoration
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decorazione eccezione attivita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__activity_state
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__activity_state
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__activity_state
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__activity_state
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__activity_state
+msgid "Activity State"
+msgstr "Stato attivita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__activity_type
+msgid "Activity Type"
+msgstr "Tipo attivita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__activity_type_icon
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__activity_type_icon
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__activity_type_icon
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__activity_type_icon
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icona tipo attivita"
+
+#. module: field_managment
+#: model:ir.model,name:field_managment.model_farm_field
+msgid "Agricultural Field"
+msgstr "Campo agricolo"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__agronomic_note
+msgid "Agronomic Note"
+msgstr "Nota agronomica"
+
+#. module: field_managment
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_crop_cycle_form
+msgid "Agronomic Notes"
+msgstr "Note agronomiche"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__allowed_harvest_date
+msgid "Allowed Harvest Date"
+msgstr "Data raccolta consentita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__area_ha
+msgid "Area (ha)"
+msgstr "Superficie (ha)"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__message_attachment_count
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__message_attachment_count
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__message_attachment_count
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__message_attachment_count
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__message_attachment_count
+msgid "Attachment Count"
+msgstr "Numero allegati"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_harvest_lot__quality_grade__b
+msgid "B"
+msgstr "B"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__batch_note
+msgid "Batch Note"
+msgstr "Nota lotto"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_crop_cycle__state__cancelled
+msgid "Cancelled"
+msgstr "Annullato"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field__soil_type__clay
+msgid "Clay"
+msgstr "Argilloso"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__weather__cloudy
+msgid "Cloudy"
+msgstr "Nuvoloso"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__code
+msgid "Code"
+msgstr "Codice"
+
+#. module: field_managment
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_field_log_form
+msgid "Confirm"
+msgstr "Conferma"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__state__confirmed
+msgid "Confirmed"
+msgstr "Confermato"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__consumer_story
+msgid "Consumer Story"
+msgstr "Racconto per il consumatore"
+
+#. module: field_managment
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_field_log_form
+msgid "Context"
+msgstr "Contesto"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field__cultivation_method__conventional
+msgid "Conventional"
+msgstr "Convenzionale"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__cost_estimate
+msgid "Cost Estimate"
+msgstr "Costo stimato"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__create_uid
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__create_uid
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__create_uid
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__create_uid
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__create_date
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__create_date
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__create_date
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__create_date
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__product_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__product_id
+msgid "Crop / Variety"
+msgstr "Coltura / Varieta"
+
+#. module: field_managment
+#: model:ir.model,name:field_managment.model_farm_crop_cycle
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__crop_cycle_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__crop_cycle_id
+msgid "Crop Cycle"
+msgstr "Ciclo colturale"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__crop_cycle_count
+msgid "Crop Cycle Count"
+msgstr "Numero cicli colturali"
+
+#. module: field_managment
+#: model:ir.actions.act_window,name:field_managment.action_farm_crop_cycle
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__crop_cycle_ids
+#: model:ir.ui.menu,name:field_managment.menu_farm_crop_cycle
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_field_form
+msgid "Crop Cycles"
+msgstr "Cicli colturali"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__cultivation_method
+msgid "Cultivation Method"
+msgstr "Metodo di coltivazione"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__currency_id
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__current_crop_cycle_id
+msgid "Current Crop Cycle"
+msgstr "Ciclo colturale corrente"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__date
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__date
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__date
+msgid "Date"
+msgstr "Data"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__destination
+msgid "Destination"
+msgstr "Destinazione"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_harvest_lot__quality_grade__discard
+msgid "Discard"
+msgstr "Scarto"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__display_name
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__display_name
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__display_name
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__display_name
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_crop_cycle__state__done
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_processing_lot__state__done
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_crop_cycle_form
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_processing_lot_form
+msgid "Done"
+msgstr "Completato"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__state__draft
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_processing_lot__state__draft
+msgid "Draft"
+msgstr "Bozza"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field__cultivation_method__dry_farming
+msgid "Dry Farming"
+msgstr "Aridocoltura"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__date_end
+msgid "End Date"
+msgstr "Data fine"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__expected_harvest_date
+msgid "Expected Harvest Date"
+msgstr "Data raccolta prevista"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__target_qty_kg
+msgid "Expected Yield (kg)"
+msgstr "Resa prevista (kg)"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__activity_type__fertilization
+msgid "Fertilization"
+msgstr "Concimazione"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__field_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__field_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__field_id
+msgid "Field"
+msgstr "Campo"
+
+#. module: field_managment
+#: model:ir.actions.act_window,name:field_managment.action_farm_field_log
+#: model:ir.model,name:field_managment.model_farm_field_log
+#: model:ir.ui.menu,name:field_managment.menu_farm_field_log
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_crop_cycle_form
+msgid "Field Log"
+msgstr "Giornale di campo"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__field_log_count
+msgid "Field Log Count"
+msgstr "Numero registrazioni campo"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__log_ids
+msgid "Field Logs"
+msgstr "Registrazioni campo"
+
+#. module: field_managment
+#: model:ir.ui.menu,name:field_managment.menu_field_management_root
+msgid "Field Management"
+msgstr "Gestione Campi"
+
+#. module: field_managment
+#: model:ir.actions.act_window,name:field_managment.action_farm_field
+#: model:ir.ui.menu,name:field_managment.menu_farm_field
+msgid "Fields"
+msgstr "Campi"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__product_id
+msgid "Finished Product"
+msgstr "Prodotto finito"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__message_follower_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__message_follower_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__message_follower_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__message_follower_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__message_follower_ids
+msgid "Followers"
+msgstr "Follower"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__message_partner_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__message_partner_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__message_partner_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__message_partner_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Follower (partner)"
+
+#. module: field_managment
+#: model:ir.model.fields,help:field_managment.field_farm_crop_cycle__activity_type_icon
+#: model:ir.model.fields,help:field_managment.field_farm_field__activity_type_icon
+#: model:ir.model.fields,help:field_managment.field_farm_field_log__activity_type_icon
+#: model:ir.model.fields,help:field_managment.field_farm_harvest_lot__activity_type_icon
+#: model:ir.model.fields,help:field_managment.field_farm_processing_lot__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icona Font Awesome, es. fa-tasks"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_harvest_lot__destination__fresh
+msgid "Fresh Sale"
+msgstr "Vendita fresco"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__activity_type__harvest
+msgid "Harvest"
+msgstr "Raccolta"
+
+#. module: field_managment
+#: model:ir.model,name:field_managment.model_farm_harvest_lot
+msgid "Harvest Lot"
+msgstr "Lotto raccolta"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__harvest_lot_count
+msgid "Harvest Lot Count"
+msgstr "Numero lotti raccolta"
+
+#. module: field_managment
+#: model:ir.actions.act_window,name:field_managment.action_farm_harvest_lot
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__harvest_lot_ids
+#: model:ir.ui.menu,name:field_managment.menu_farm_harvest_lot
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_crop_cycle_form
+msgid "Harvest Lots"
+msgstr "Lotti raccolta"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__operator_id
+msgid "Harvest Team / Operator"
+msgstr "Squadra raccolta / Operatore"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__harvested_qty_kg
+msgid "Harvested (kg)"
+msgstr "Raccolto (kg)"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_crop_cycle__state__harvesting
+msgid "Harvesting"
+msgstr "In raccolta"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__has_message
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__has_message
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__has_message
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__has_message
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__has_message
+msgid "Has Message"
+msgstr "Ha messaggi"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__weather__hot
+msgid "Hot"
+msgstr "Caldo"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__id
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__id
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__id
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__id
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__id
+msgid "ID"
+msgstr "ID"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__activity_exception_icon
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__activity_exception_icon
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__activity_exception_icon
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__activity_exception_icon
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__activity_exception_icon
+msgid "Icon"
+msgstr "Icona"
+
+#. module: field_managment
+#: model:ir.model.fields,help:field_managment.field_farm_crop_cycle__activity_exception_icon
+#: model:ir.model.fields,help:field_managment.field_farm_field__activity_exception_icon
+#: model:ir.model.fields,help:field_managment.field_farm_field_log__activity_exception_icon
+#: model:ir.model.fields,help:field_managment.field_farm_harvest_lot__activity_exception_icon
+#: model:ir.model.fields,help:field_managment.field_farm_processing_lot__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icona per indicare un'attivita in eccezione."
+
+#. module: field_managment
+#: model:ir.model.fields,help:field_managment.field_farm_crop_cycle__message_needaction
+#: model:ir.model.fields,help:field_managment.field_farm_field__message_needaction
+#: model:ir.model.fields,help:field_managment.field_farm_field_log__message_needaction
+#: model:ir.model.fields,help:field_managment.field_farm_harvest_lot__message_needaction
+#: model:ir.model.fields,help:field_managment.field_farm_processing_lot__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Se selezionato, nuovi messaggi richiedono attenzione."
+
+#. module: field_managment
+#: model:ir.model.fields,help:field_managment.field_farm_crop_cycle__message_has_error
+#: model:ir.model.fields,help:field_managment.field_farm_crop_cycle__message_has_sms_error
+#: model:ir.model.fields,help:field_managment.field_farm_field__message_has_error
+#: model:ir.model.fields,help:field_managment.field_farm_field__message_has_sms_error
+#: model:ir.model.fields,help:field_managment.field_farm_field_log__message_has_error
+#: model:ir.model.fields,help:field_managment.field_farm_field_log__message_has_sms_error
+#: model:ir.model.fields,help:field_managment.field_farm_harvest_lot__message_has_error
+#: model:ir.model.fields,help:field_managment.field_farm_harvest_lot__message_has_sms_error
+#: model:ir.model.fields,help:field_managment.field_farm_processing_lot__message_has_error
+#: model:ir.model.fields,help:field_managment.field_farm_processing_lot__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Se selezionato, alcuni messaggi hanno un errore di consegna."
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__input_qty_kg
+msgid "Input (kg)"
+msgstr "Materia prima (kg)"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__product_id
+msgid "Input / Product"
+msgstr "Mezzo tecnico / Prodotto"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__activity_type__inspection
+msgid "Inspection"
+msgstr "Controllo"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field__cultivation_method__integrated
+msgid "Integrated Pest Management"
+msgstr "Lotta integrata"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_harvest_lot__destination__internal
+msgid "Internal Use"
+msgstr "Uso interno"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__activity_type__irrigation
+msgid "Irrigation"
+msgstr "Irrigazione"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__irrigation_available
+msgid "Irrigation Available"
+msgstr "Irrigazione disponibile"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__message_is_follower
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__message_is_follower
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__message_is_follower
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__message_is_follower
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__message_is_follower
+msgid "Is Follower"
+msgstr "E follower"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__write_uid
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__write_uid
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__write_uid
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__write_uid
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__write_date
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__write_date
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__write_date
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__write_date
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__latitude
+msgid "Latitude"
+msgstr "Latitudine"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field__soil_type__loam
+msgid "Loam"
+msgstr "Franco"
+
+#. module: field_managment
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_field_form
+msgid "Location"
+msgstr "Posizione"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__longitude
+msgid "Longitude"
+msgstr "Longitudine"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__message_has_error
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__message_has_error
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__message_has_error
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__message_has_error
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__message_has_error
+msgid "Message Delivery error"
+msgstr "Errore consegna messaggio"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__message_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__message_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__message_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__message_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__message_ids
+msgid "Messages"
+msgstr "Messaggi"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field__soil_type__mixed
+msgid "Mixed"
+msgstr "Misto"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__my_activity_date_deadline
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__my_activity_date_deadline
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__my_activity_date_deadline
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__my_activity_date_deadline
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Scadenza mia attivita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__name
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__name
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__name
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__name
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__is_natural_input
+msgid "Natural / Low Impact Input"
+msgstr "Mezzo naturale / basso impatto"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__activity_calendar_event_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__activity_calendar_event_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__activity_calendar_event_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__activity_calendar_event_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Prossimo evento calendario attivita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__activity_date_deadline
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__activity_date_deadline
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__activity_date_deadline
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__activity_date_deadline
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Scadenza prossima attivita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__activity_summary
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__activity_summary
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__activity_summary
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__activity_summary
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__activity_summary
+msgid "Next Activity Summary"
+msgstr "Riepilogo prossima attivita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__activity_type_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__activity_type_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__activity_type_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__activity_type_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__activity_type_id
+msgid "Next Activity Type"
+msgstr "Tipo prossima attivita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__notes
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__notes
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__notes
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_field_form
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_harvest_lot_form
+msgid "Notes"
+msgstr "Note"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__message_needaction_counter
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__message_needaction_counter
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__message_needaction_counter
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__message_needaction_counter
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Numero azioni"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__message_has_error_counter
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__message_has_error_counter
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__message_has_error_counter
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__message_has_error_counter
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__message_has_error_counter
+msgid "Number of errors"
+msgstr "Numero errori"
+
+#. module: field_managment
+#: model:ir.model.fields,help:field_managment.field_farm_crop_cycle__message_needaction_counter
+#: model:ir.model.fields,help:field_managment.field_farm_field__message_needaction_counter
+#: model:ir.model.fields,help:field_managment.field_farm_field_log__message_needaction_counter
+#: model:ir.model.fields,help:field_managment.field_farm_harvest_lot__message_needaction_counter
+#: model:ir.model.fields,help:field_managment.field_farm_processing_lot__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Numero messaggi che richiedono azione"
+
+#. module: field_managment
+#: model:ir.model.fields,help:field_managment.field_farm_crop_cycle__message_has_error_counter
+#: model:ir.model.fields,help:field_managment.field_farm_field__message_has_error_counter
+#: model:ir.model.fields,help:field_managment.field_farm_field_log__message_has_error_counter
+#: model:ir.model.fields,help:field_managment.field_farm_harvest_lot__message_has_error_counter
+#: model:ir.model.fields,help:field_managment.field_farm_processing_lot__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Numero messaggi con errore di consegna"
+
+#. module: field_managment
+#: model:ir.ui.menu,name:field_managment.menu_field_management_operations
+msgid "Operations"
+msgstr "Operazioni"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__operator_id
+msgid "Operator"
+msgstr "Operatore"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field__cultivation_method__organic
+msgid "Organic"
+msgstr "Biologico"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__activity_type__other
+msgid "Other"
+msgstr "Altro"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__output_qty
+msgid "Output Quantity"
+msgstr "Quantita prodotta"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__output_uom
+msgid "Output UoM"
+msgstr "UdM output"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__partner_id
+msgid "Owner / Farm"
+msgstr "Proprietario / Azienda agricola"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_crop_cycle__state__planned
+msgid "Planned"
+msgstr "Pianificato"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_harvest_lot__destination__processing
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_harvest_lot__quality_grade__processing
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_processing_lot__state__processing
+msgid "Processing"
+msgstr "Trasformazione"
+
+#. module: field_managment
+#: model:ir.model,name:field_managment.model_farm_processing_lot
+msgid "Processing Lot"
+msgstr "Lotto trasformazione"
+
+#. module: field_managment
+#: model:ir.actions.act_window,name:field_managment.action_farm_processing_lot
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__processing_lot_ids
+#: model:ir.ui.menu,name:field_managment.menu_farm_processing_lot
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_harvest_lot_form
+msgid "Processing Lots"
+msgstr "Lotti trasformazione"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__quality_grade
+msgid "Quality Grade"
+msgstr "Classe qualita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__quantity
+msgid "Quantity"
+msgstr "Quantita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__quantity_kg
+msgid "Quantity Kg"
+msgstr "Quantita kg"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__weather__rain
+msgid "Rain"
+msgstr "Pioggia"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__reason
+msgid "Reason"
+msgstr "Motivazione"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__responsible_id
+msgid "Responsible"
+msgstr "Responsabile"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__activity_user_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__activity_user_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__activity_user_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__activity_user_id
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__activity_user_id
+msgid "Responsible User"
+msgstr "Utente responsabile"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__message_has_sms_error
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__message_has_sms_error
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__message_has_sms_error
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__message_has_sms_error
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Errore consegna SMS"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field__soil_type__sandy
+msgid "Sandy"
+msgstr "Sabbioso"
+
+#. module: field_managment
+#: model:ir.model.fields,help:field_managment.field_farm_processing_lot__consumer_story
+msgid "Short traceability text suitable for a QR code landing page or label."
+msgstr "Breve testo di tracciabilita adatto a una landing page QR code o a un'etichetta."
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__soil_type
+msgid "Soil Type"
+msgstr "Tipo terreno"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__activity_type__soil_work
+msgid "Soil Work"
+msgstr "Lavorazione terreno"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__harvest_lot_ids
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_processing_lot_form
+msgid "Source Harvest Lots"
+msgstr "Lotti raccolta origine"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__activity_type__sowing
+msgid "Sowing / Transplant"
+msgstr "Semina / Trapianto"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__date_start
+msgid "Sowing / Transplant Date"
+msgstr "Data semina / trapianto"
+
+#. module: field_managment
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_crop_cycle_form
+msgid "Start"
+msgstr "Avvia"
+
+#. module: field_managment
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_crop_cycle_form
+msgid "Start Harvest"
+msgstr "Avvia raccolta"
+
+#. module: field_managment
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_processing_lot_form
+msgid "Start Processing"
+msgstr "Avvia trasformazione"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__state
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__state
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__state
+msgid "State"
+msgstr "Stato"
+
+#. module: field_managment
+#: model:ir.model.fields,help:field_managment.field_farm_crop_cycle__activity_state
+#: model:ir.model.fields,help:field_managment.field_farm_field__activity_state
+#: model:ir.model.fields,help:field_managment.field_farm_field_log__activity_state
+#: model:ir.model.fields,help:field_managment.field_farm_harvest_lot__activity_state
+#: model:ir.model.fields,help:field_managment.field_farm_processing_lot__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__stock_lot_id
+msgid "Stock Lot"
+msgstr "Lotto magazzino"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__weather__sunny
+msgid "Sunny"
+msgstr "Soleggiato"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__sustainability_note
+msgid "Sustainability Note"
+msgstr "Nota sostenibilita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__temperature
+msgid "Temperature C"
+msgstr "Temperatura C"
+
+#. module: field_managment
+#: model:ir.ui.menu,name:field_managment.menu_field_management_traceability
+msgid "Traceability"
+msgstr "Tracciabilita"
+
+#. module: field_managment
+#: model_terms:ir.ui.view,arch_db:field_managment.view_farm_processing_lot_form
+msgid "Traceability Story"
+msgstr "Racconto tracciabilita"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__traceability_url
+msgid "Traceability Url"
+msgstr "URL tracciabilita"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__activity_type__treatment
+msgid "Treatment"
+msgstr "Trattamento"
+
+#. module: field_managment
+#: model:ir.model.fields,help:field_managment.field_farm_crop_cycle__activity_exception_decoration
+#: model:ir.model.fields,help:field_managment.field_farm_field__activity_exception_decoration
+#: model:ir.model.fields,help:field_managment.field_farm_field_log__activity_exception_decoration
+#: model:ir.model.fields,help:field_managment.field_farm_harvest_lot__activity_exception_decoration
+#: model:ir.model.fields,help:field_managment.field_farm_processing_lot__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo dell'attivita in eccezione sul record."
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__uom_name
+msgid "Unit of Measure"
+msgstr "Unita di misura"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__variety
+msgid "Variety"
+msgstr "Varieta"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field__soil_type__volcanic
+msgid "Volcanic"
+msgstr "Vulcanico"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__weather
+msgid "Weather"
+msgstr "Meteo"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__website_message_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_field__website_message_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__website_message_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_harvest_lot__website_message_ids
+#: model:ir.model.fields,field_description:field_managment.field_farm_processing_lot__website_message_ids
+msgid "Website Messages"
+msgstr "Messaggi sito web"
+
+#. module: field_managment
+#: model:ir.model.fields,help:field_managment.field_farm_crop_cycle__website_message_ids
+#: model:ir.model.fields,help:field_managment.field_farm_field__website_message_ids
+#: model:ir.model.fields,help:field_managment.field_farm_field_log__website_message_ids
+#: model:ir.model.fields,help:field_managment.field_farm_harvest_lot__website_message_ids
+#: model:ir.model.fields,help:field_managment.field_farm_processing_lot__website_message_ids
+msgid "Website communication history"
+msgstr "Storico comunicazioni sito web"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__activity_type__weeding
+msgid "Weeding"
+msgstr "Sarchiatura"
+
+#. module: field_managment
+#: model:ir.model.fields.selection,name:field_managment.selection__farm_field_log__weather__wind
+msgid "Wind"
+msgstr "Vento"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_field_log__withholding_days
+msgid "Withholding Period (days)"
+msgstr "Tempo di carenza (giorni)"
+
+#. module: field_managment
+#: model:ir.model.fields,field_description:field_managment.field_farm_crop_cycle__yield_kg_ha
+msgid "Yield (kg/ha)"
+msgstr "Resa (kg/ha)"
