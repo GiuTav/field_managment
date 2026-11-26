@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_da_sensor_reading_list" model="ir.ui.view">
+        <field name="name">da.sensor.reading.list</field>
+        <field name="model">da.sensor.reading</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="measured_at"/>
+                <field name="field_id"/>
+                <field name="crop_cycle_id"/>
+                <field name="sensor_code"/>
+                <field name="air_temperature"/>
+                <field name="soil_temperature"/>
+                <field name="soil_moisture"/>
+                <field name="air_humidity"/>
+                <field name="source"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_da_sensor_reading_form" model="ir.ui.view">
+        <field name="name">da.sensor.reading.form</field>
+        <field name="model">da.sensor.reading</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="measured_at"/>
+                            <field name="sensor_code"/>
+                            <field name="source"/>
+                        </group>
+                        <group>
+                            <field name="field_id"/>
+                            <field name="crop_cycle_id"/>
+                            <field name="field_log_id"/>
+                        </group>
+                    </group>
+                    <group string="Measurements">
+                        <field name="air_temperature"/>
+                        <field name="soil_temperature"/>
+                        <field name="air_humidity"/>
+                        <field name="soil_moisture"/>
+                        <field name="rainfall_mm"/>
+                    </group>
+                    <group string="Integration">
+                        <field name="raw_payload"/>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_da_sensor_reading_graph" model="ir.ui.view">
+        <field name="name">da.sensor.reading.graph</field>
+        <field name="model">da.sensor.reading</field>
+        <field name="arch" type="xml">
+            <graph string="Sensor Trends" type="line">
+                <field name="measured_at" interval="day"/>
+                <field name="air_temperature" type="measure"/>
+                <field name="soil_temperature" type="measure"/>
+                <field name="soil_moisture" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="action_da_sensor_reading" model="ir.actions.act_window">
+        <field name="name">Sensor Readings</field>
+        <field name="res_model">da.sensor.reading</field>
+        <field name="view_mode">list,graph,form</field>
+    </record>
+</odoo>

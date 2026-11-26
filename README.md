@@ -1,6 +1,11 @@
 # Field Management for Odoo
 
-Reusable Odoo module for farms and agri-food producers that need to manage fields, crop cycles, field logs, harvest lots and traceability from field to finished product.
+Reusable Odoo addons for farms and agri-food producers that need to manage fields, crop cycles, field logs, harvest lots and traceability from field to finished product.
+
+## Addons
+
+- `field_managment`: core field, crop-cycle, field-log and lot traceability models.
+- `da_farm_managment`: optional extension for actual costing, mixed planting, sensors, GS1 data, subcontracting support and preventive vehicle maintenance.
 
 ## Main Features
 
@@ -26,6 +31,6 @@ For Diana 2.0 or similar customers, the demo should tell the story of a controll
 ## Technical Notes
 
 - Target Odoo version: 19.0.
-- Addon path: `field_managment`.
+- Addon paths: `field_managment`, `da_farm_managment`.
 - Core dependencies: `base`, `mail`, `product`, `stock`.
 - Demo-specific customer data should stay outside the addon, in scripts or demo fixtures.

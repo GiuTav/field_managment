@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_farm_field_log_list_da" model="ir.ui.view">
+        <field name="name">farm.field.log.list.da</field>
+        <field name="model">farm.field.log</field>
+        <field name="inherit_id" ref="field_managment.view_farm_field_log_list"/>
+        <field name="arch" type="xml">
+            <field name="allowed_harvest_date" position="after">
+                <field name="registration_period" optional="show"/>
+                <field name="da_actual_cost" optional="show" sum="Actual Cost"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_farm_field_log_form_da" model="ir.ui.view">
+        <field name="name">farm.field.log.form.da</field>
+        <field name="model">farm.field.log</field>
+        <field name="inherit_id" ref="field_managment.view_farm_field_log_form"/>
+        <field name="arch" type="xml">
+            <field name="date" position="after">
+                <field name="registration_period"/>
+                <field name="period_start" invisible="registration_period != 'monthly'"/>
+                <field name="period_end" invisible="registration_period != 'monthly'"/>
+            </field>
+            <field name="uom_name" position="after">
+                <field name="product_uom_id"/>
+            </field>
+            <field name="cost_estimate" position="after">
+                <field name="material_cost"/>
+                <field name="labor_cost"/>
+                <field name="machinery_cost"/>
+                <field name="other_actual_cost"/>
+                <field name="da_actual_cost"/>
+            </field>
+            <field name="notes" position="after">
+                <notebook>
+                    <page string="Labor" name="da_labor">
+                        <field name="labor_line_ids">
+                            <list editable="bottom">
+                                <field name="employee_id"/>
+                                <field name="hours"/>
+                                <field name="hourly_cost"/>
+                                <field name="total_cost" sum="Labor Total"/>
+                                <field name="notes" optional="hide"/>
+                            </list>
+                        </field>
+                    </page>
+                    <page string="Machinery" name="da_machinery">
+                        <field name="machine_line_ids">
+                            <list editable="bottom">
+                                <field name="equipment_id"/>
+                                <field name="vehicle_id"/>
+                                <field name="usage_hours"/>
+                                <field name="distance_km"/>
+                                <field name="hourly_cost"/>
+                                <field name="cost_per_km"/>
+                                <field name="rental_cost"/>
+                                <field name="total_cost" sum="Machinery Total"/>
+                            </list>
+                        </field>
+                    </page>
+                    <page string="Sensors" name="da_log_sensors">
+                        <field name="sensor_reading_ids">
+                            <list editable="bottom">
+                                <field name="measured_at"/>
+                                <field name="sensor_code"/>
+                                <field name="air_temperature"/>
+                                <field name="soil_temperature"/>
+                                <field name="soil_moisture"/>
+                                <field name="source"/>
+                            </list>
+                        </field>
+                    </page>
+                </notebook>
+            </field>
+        </field>
+    </record>
+</odoo>

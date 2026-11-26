@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_farm_crop_cycle_list_da" model="ir.ui.view">
+        <field name="name">farm.crop.cycle.list.da</field>
+        <field name="model">farm.crop.cycle</field>
+        <field name="inherit_id" ref="field_managment.view_farm_crop_cycle_list"/>
+        <field name="arch" type="xml">
+            <field name="yield_kg_ha" position="after">
+                <field name="actual_cost" optional="show" sum="Total Cost"/>
+                <field name="cost_per_kg" optional="show"/>
+                <field name="campaign_year" optional="show"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_farm_crop_cycle_form_da" model="ir.ui.view">
+        <field name="name">farm.crop.cycle.form.da</field>
+        <field name="model">farm.crop.cycle</field>
+        <field name="inherit_id" ref="field_managment.view_farm_crop_cycle_form"/>
+        <field name="arch" type="xml">
+            <field name="variety" position="after">
+                <field name="log_frequency"/>
+                <field name="campaign_year"/>
+            </field>
+            <field name="yield_kg_ha" position="after">
+                <field name="actual_cost"/>
+                <field name="cost_per_kg"/>
+            </field>
+            <xpath expr="//notebook" position="inside">
+                <page string="Crops / Planting" name="da_planting">
+                    <field name="planting_line_ids">
+                        <list editable="bottom">
+                            <field name="sequence" widget="handle"/>
+                            <field name="product_id"/>
+                            <field name="variety"/>
+                            <field name="area_ha"/>
+                            <field name="plant_count"/>
+                            <field name="sowing_quantity_kg"/>
+                            <field name="density_plants_ha"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_farm_crop_cycle_graph_da" model="ir.ui.view">
+        <field name="name">farm.crop.cycle.graph.da</field>
+        <field name="model">farm.crop.cycle</field>
+        <field name="arch" type="xml">
+            <graph string="Yield and Cost History" type="bar">
+                <field name="campaign_year"/>
+                <field name="harvested_qty_kg" type="measure"/>
+                <field name="yield_kg_ha" type="measure"/>
+                <field name="actual_cost" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="view_farm_crop_cycle_pivot_da" model="ir.ui.view">
+        <field name="name">farm.crop.cycle.pivot.da</field>
+        <field name="model">farm.crop.cycle</field>
+        <field name="arch" type="xml">
+            <pivot string="Yield and Cost History">
+                <field name="campaign_year" type="row"/>
+                <field name="field_id" type="row"/>
+                <field name="product_id" type="col"/>
+                <field name="harvested_qty_kg" type="measure"/>
+                <field name="yield_kg_ha" type="measure"/>
+                <field name="actual_cost" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="action_farm_yield_history_da" model="ir.actions.act_window">
+        <field name="name">Yield and Cost History</field>
+        <field name="res_model">farm.crop.cycle</field>
+        <field name="view_mode">graph,pivot,list,form</field>
+        <field name="domain">[('state', '=', 'done')]</field>
+    </record>
+</odoo>

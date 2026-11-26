@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_farm_harvest_lot_list_da" model="ir.ui.view">
+        <field name="name">farm.harvest.lot.list.da</field>
+        <field name="model">farm.harvest.lot</field>
+        <field name="inherit_id" ref="field_managment.view_farm_harvest_lot_list"/>
+        <field name="arch" type="xml">
+            <field name="quantity_kg" position="after">
+                <field name="cost_per_kg" optional="show"/>
+                <field name="allocated_cost" optional="show" sum="Allocated Cost"/>
+                <field name="gs1_human_readable" optional="hide"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_farm_harvest_lot_form_da" model="ir.ui.view">
+        <field name="name">farm.harvest.lot.form.da</field>
+        <field name="model">farm.harvest.lot</field>
+        <field name="inherit_id" ref="field_managment.view_farm_harvest_lot_form"/>
+        <field name="arch" type="xml">
+            <field name="quantity_kg" position="after">
+                <field name="cost_per_kg"/>
+                <field name="allocated_cost"/>
+            </field>
+            <field name="stock_lot_id" position="after">
+                <field name="gs1_human_readable" readonly="1"/>
+                <field name="gs1_data" readonly="1"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_farm_processing_lot_list_da" model="ir.ui.view">
+        <field name="name">farm.processing.lot.list.da</field>
+        <field name="model">farm.processing.lot</field>
+        <field name="inherit_id" ref="field_managment.view_farm_processing_lot_list"/>
+        <field name="arch" type="xml">
+            <field name="output_uom" position="after">
+                <field name="stock_lot_id" optional="show"/>
+                <field name="gs1_human_readable" optional="hide"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_farm_processing_lot_form_da" model="ir.ui.view">
+        <field name="name">farm.processing.lot.form.da</field>
+        <field name="model">farm.processing.lot</field>
+        <field name="inherit_id" ref="field_managment.view_farm_processing_lot_form"/>
+        <field name="arch" type="xml">
+            <field name="output_uom" position="after">
+                <field name="stock_lot_id"/>
+                <field name="gs1_human_readable" readonly="1"/>
+                <field name="gs1_data" readonly="1"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="product_template_form_da_gtin" model="ir.ui.view">
+        <field name="name">product.template.form.da.gtin</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <field name="barcode" position="after">
+                <field name="da_gtin14" placeholder="14-digit GS1 GTIN"/>
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_da_analysis" name="Analysis" parent="field_managment.menu_field_management_root" sequence="30"/>
+    <menuitem id="menu_da_fleet" name="Fleet &amp; Maintenance" parent="field_managment.menu_field_management_root" sequence="40"/>
+
+    <menuitem id="menu_da_sensor_reading" name="Sensor Readings"
+              parent="field_managment.menu_field_management_operations"
+              action="action_da_sensor_reading" sequence="40"/>
+    <menuitem id="menu_da_yield_history" name="Yield and Cost History"
+              parent="menu_da_analysis" action="action_farm_yield_history_da" sequence="10"/>
+    <menuitem id="menu_da_vehicle_fuel" name="Fuel and Odometer Logs"
+              parent="menu_da_fleet" action="action_da_vehicle_fuel_log" sequence="10"/>
+    <menuitem id="menu_da_vehicle_maintenance" name="Maintenance Plans"
+              parent="menu_da_fleet" action="action_da_vehicle_maintenance_plan" sequence="20"/>
+</odoo>

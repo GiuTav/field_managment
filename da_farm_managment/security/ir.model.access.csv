@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_da_farm_planting_line_user,da.farm.planting.line user,model_da_farm_planting_line,base.group_user,1,1,1,1
+access_da_sensor_reading_user,da.sensor.reading user,model_da_sensor_reading,base.group_user,1,1,1,1
+access_da_field_log_labor_user,da.field.log.labor user,model_da_field_log_labor,base.group_user,1,1,1,1
+access_da_field_log_machine_user,da.field.log.machine user,model_da_field_log_machine,base.group_user,1,1,1,1
+access_da_vehicle_fuel_log_user,da.vehicle.fuel.log user,model_da_vehicle_fuel_log,base.group_user,1,1,1,1
+access_da_vehicle_maintenance_plan_user,da.vehicle.maintenance.plan user,model_da_vehicle_maintenance_plan,base.group_user,1,1,1,1

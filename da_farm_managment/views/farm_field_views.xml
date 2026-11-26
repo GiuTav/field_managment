@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_farm_field_list_da" model="ir.ui.view">
+        <field name="name">farm.field.list.da</field>
+        <field name="model">farm.field</field>
+        <field name="inherit_id" ref="field_managment.view_farm_field_list"/>
+        <field name="arch" type="xml">
+            <field name="cultivation_method" position="after">
+                <field name="cultivation_pattern"/>
+                <field name="tenure_status"/>
+                <field name="total_harvested_kg" optional="show"/>
+                <field name="average_yield_kg_ha" optional="show"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_farm_field_form_da" model="ir.ui.view">
+        <field name="name">farm.field.form.da</field>
+        <field name="model">farm.field</field>
+        <field name="inherit_id" ref="field_managment.view_farm_field_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group[1]" position="before">
+                <div class="oe_button_box" name="button_box">
+                    <button name="action_open_da_map" type="object" class="oe_stat_button" icon="fa-map-marker">
+                        <div class="o_stat_info"><span class="o_stat_text">Open Map</span></div>
+                    </button>
+                </div>
+            </xpath>
+            <field name="cultivation_method" position="after">
+                <field name="cultivation_pattern"/>
+                <field name="tenure_status"/>
+            </field>
+            <xpath expr="//group[./field[@name='latitude']]" position="inside">
+                <field name="boundary_geojson" placeholder="GeoJSON Polygon / MultiPolygon"/>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="Tenure" name="da_tenure">
+                    <group>
+                        <group>
+                            <field name="tenure_status"/>
+                            <field name="landlord_id" invisible="tenure_status == 'owned'"/>
+                        </group>
+                        <group>
+                            <field name="lease_start" invisible="tenure_status == 'owned'"/>
+                            <field name="lease_end" invisible="tenure_status == 'owned'"/>
+                            <field name="annual_rent_cost" invisible="tenure_status == 'owned'"/>
+                        </group>
+                    </group>
+                </page>
+                <page string="Sensors" name="da_sensors">
+                    <field name="sensor_reading_ids" context="{'default_field_id': id}">
+                        <list editable="bottom">
+                            <field name="measured_at"/>
+                            <field name="sensor_code"/>
+                            <field name="air_temperature"/>
+                            <field name="soil_temperature"/>
+                            <field name="soil_moisture"/>
+                            <field name="source"/>
+                        </list>
+                    </field>
+                </page>
+                <page string="Historical Yield" name="da_yield">
+                    <group>
+                        <field name="completed_cycle_count"/>
+                        <field name="total_harvested_kg"/>
+                        <field name="average_yield_kg_ha"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
